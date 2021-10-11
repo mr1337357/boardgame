@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import sys
 from bgplayer import bgplayer
+from bgboard import bgboard
 from random import randint
 
 class game:
@@ -40,6 +41,7 @@ class game:
 
 if __name__ == '__main__':
     g = game()
+    b = bgboard()
     players = None
     while players == None:
         try:
@@ -51,10 +53,16 @@ if __name__ == '__main__':
     g.start()
     while not g.get_winner():
         p = g.get_current_player()
-        input('{}: roll dice'.format(p.name))
+        print('{}\'s turn'.format(p.name))
+        a = ''
+        while a != 'r':
+            a = input('action? ')
+            if a == 'i':
+                pass
         r = g.roll()
         print('rolled {}'.format(r))
         p.move(r)
+        b.event(p)
         print('moved to {}'.format(p.position))
         g.end_turn()
     winner = g.get_winner()
