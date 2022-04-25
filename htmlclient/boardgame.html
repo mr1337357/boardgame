@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <head>
+<style>
+	.console {
+		border: 5px outset red;
+		top: 500px;
+	}
+	.pawn {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		background-image: url('pawn.png');
+	}
+</style>
+  </head>
+  <body>
+  <div class="console" id="console"></div>
+    <script>
+		function log(msg)
+		{
+			let clean = String(msg).replace(/</g,'&lt;').replace(/>/g,'&gt;');
+			clean += '<br/>';
+			console.innerHTML += clean;
+		}
+		let console = document.getElementById('console');
+		let players = [];
+		let page = document.querySelector('body');
+		let pawn = document.getElementById('pawn');
+		function createPlayer(name)
+		{
+			let player = document.createElement('div');
+			player.id = name;
+			player.classList.add('pawn');
+			player.style.top = 100+'px';
+			player.style.left = 100+'px';
+			page.appendChild(player);
+			return player;
+		}
+		players.push(createPlayer('bob'));
+		log('<h1>asdf</h1>');
+		log(players);
+		//createPlayer('bob');
+    </script>
+  </body>
+</html>
