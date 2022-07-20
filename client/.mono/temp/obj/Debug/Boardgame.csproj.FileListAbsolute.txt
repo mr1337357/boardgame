@@ -1,0 +1,9 @@
+C:\Users\misspapaya\projects\boardgame\client\.mono\temp\obj\Debug\Boardgame.csproj.AssemblyReference.cache
+C:\Users\misspapaya\projects\boardgame\client\.mono\temp\obj\Debug\Boardgame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\misspapaya\projects\boardgame\client\.mono\temp\obj\Debug\Boardgame.AssemblyInfoInputs.cache
+C:\Users\misspapaya\projects\boardgame\client\.mono\temp\obj\Debug\Boardgame.AssemblyInfo.cs
+C:\Users\misspapaya\projects\boardgame\client\.mono\temp\obj\Debug\Boardgame.csproj.CoreCompileInputs.cache
+C:\Users\misspapaya\projects\boardgame\client\.mono\temp\bin\Debug\Boardgame.dll
+C:\Users\misspapaya\projects\boardgame\client\.mono\temp\bin\Debug\Boardgame.pdb
+C:\Users\misspapaya\projects\boardgame\client\.mono\temp\obj\Debug\Boardgame.dll
+C:\Users\misspapaya\projects\boardgame\client\.mono\temp\obj\Debug\Boardgame.pdb
