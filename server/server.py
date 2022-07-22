@@ -1,6 +1,6 @@
 import sys
 from game import game
-from sockapi import sockapi
+from udpsock import udpsock
 
 class server_instance():
     def __init__(self):
@@ -13,7 +13,7 @@ class server_instance():
         self.games = game(players)
     
 if __name__ == '__main__':
-    s = sockapi()
+    s = udpsock()
     while True:
         ev = s.get_event()
         print(ev)
